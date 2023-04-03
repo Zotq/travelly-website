@@ -87,7 +87,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
 
-    
+
 }
 
 nav ul {
@@ -375,9 +375,11 @@ footer ul {
         background-color: rgba(19, 28, 39, 0.8);
         color: white;
         padding: 3rem 2rem;
+
+
     }
+
     .form-wrapper {
         width: 90%;
     }
-
 }
