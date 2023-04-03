@@ -265,7 +265,7 @@ p {
 
 .form-wrapper {
     background-color: rgba(19, 28, 39, 0.8);
-    width: 60%;
+    width: 50%;
     color: white;
     border-radius: 20px;
 }
@@ -375,8 +375,9 @@ footer ul {
         background-color: rgba(19, 28, 39, 0.8);
         color: white;
         padding: 3rem 2rem;
-
-
+    }
+    .form-wrapper {
+        width: 90%;
     }
 
 }
