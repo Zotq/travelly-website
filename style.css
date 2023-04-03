@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+p {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+
+
+}
+
+#mainheading {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h4,
+h5 {
+    font-size: 2.8rem;
+}
+
+button {
+    padding: 2rem 6rem;
+    background: #4c6297;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #27394e;
+}
+
+/*NAV SECTION WITH HERO*/
+
+.main-head {
+    background-color: #131c27;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    padding: 3rem;
+    min-height: 8rem;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+}
+
+#logo {
+    flex: 2 1 40rem;
+    font-family: 'Pacifico', cursive;
+    font-size: 5vh;
+    font-weight: 300;
+    color: beige;
+}
+
+.hero {
+    min-height: 90vh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.8), transparent), url('img/landing-page.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.hero h3 {
+    padding: 5rem;
+}
+
+/*LOCATIONS  SECTION*/
+
+#locations {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+        url("img/new-york-page.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.locations-head {
+    width: 90%;
+    margin: auto;
+
+}
+
+.locations-head h2 {
+    padding: 2rem 0rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+
+
+}
+
+.locations-head h3 {
+    padding-top: 2rem;
+}
+
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.moving-cloud-1 {
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
+    opacity: 0.8;
+}
+
+.moving-cloud-2 {
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
+    top: 20%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+
+
+@keyframes cloudAnimation {
+    from {
+        transform: translate(10%, -10%);
+    }
+
+    to {
+        transform: translate(0%, 0%);
+    }
+
+}
+
+/*BENEFITS SECTION*/
+
+
+.benefits-head {
+    background: #1f384d;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: bl;
+    text-align: center;
+}
+
+.benefits-head h3 {
+    padding: 1rem;
+    color: white;
+}
+
+#benefits-title {
+    color: white;
+}
+
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 10px rgba(104, 104, 104, 0.1), 0px 20px 20px rgba(129, 129, 129, 0.1);
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    text-align: center;
+
+}
+
+.cards img {
+    max-width: 15%;
+    height: 100px;
+}
+
+.cards h4,
+p {
+    padding: 1rem;
+    color: black;
+}
+
+.card-icon {
+    background-color: #1f384d;
+}
+
+/*CONTACT PAGE*/
+#contact {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+        url("/img/contact-mountain.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    background-color: rgba(19, 28, 39, 0.8);
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+}
+
+.form-head {
+    text-align: center;
+    padding: 4rem;
+}
+
+.email-form {
+    padding: 3rem;
+    text-align: center;
+
+}
+
+.name-form {
+    padding: 3rem;
+    text-align: center;
+}
+
+.form-wrapper label {
+    margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 9rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-wrapper input {
+    padding: 1rem 3rem;
+}
+
+footer {
+    color: white;
+    background-color: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+
+}
+
+.wrapper-1 {
+    display: flex;
+    flex-grow: 1;
+
+}
+
+.wrapper-2 {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+#discord {
+    height: 27px;
+    width: 27px;
+}
+
+
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 940px) {
+
+    html {
+        font-size: 45%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #logo {
+        padding: 1rem;
+    }
+
+    .cloud {
+        height: 40rem;
+        pointer-events: none;
+    }
+
+    .moving-cloud-1 {
+        z-index: -1;
+    }
+
+    .moving-cloud-2 {
+        z-index: -2;
+    }
+
+    .locations-head h3 {
+        background-color: rgba(19, 28, 39, 0.8);
+        color: white;
+        padding: 3rem 2rem;
+
+
+    }
+
+}
